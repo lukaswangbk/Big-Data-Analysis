@@ -4,7 +4,7 @@ Seven data-intensive and machine learning problems. Feel free to submit a pull r
 
 ## Enviroment
 * `Ubuntu 14.04 LTS`
-* `Hadoop version: 2.7.X`
+* `Hadoop version: 2.9.2`
 * `Python version: 2.7`
 
 ## Project
