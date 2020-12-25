@@ -2,7 +2,7 @@
 Hadoop is an open-source software framework used for distributed storage and processing. We are going to setup a Hadoop cluster using Google
 Compute Engine. The official tutorial for Amazon EC2 can be found [here](https://aws.amazon.com/getting-started).
 
-## Single-node Hadoop Setup
+## Task 1: Single-node Hadoop Setup
 **Step 1:** Linux VM setup
           
     Follow the official instruction and open the console.
@@ -218,7 +218,7 @@ jps
 ```
 **Step 24:** Congrats and play around with it
 
-## Multiple-node Hadoop Setup 
+## Task 2: Multiple-node Hadoop Setup 
 ### 4VM and 3 Slaves
 :heavy_exclamation_mark: **Following steps should be implemented on all slaves**
 
@@ -478,7 +478,7 @@ hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar terasort
 hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar teragen 214748365 terasort/20G-input
 hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar terasort terasort/2G-input terasort/20G-output
 ```
-## Python 2 and Java Comparasion
+## Task 3: Python 2 and Java Job Comparasion
 ### Dataset Preparation
 ```Bash
 sudo -i
