@@ -15,15 +15,15 @@ The set of followees of A is {B, C, E} and set of followees of B is {A, C, E}. T
 We will use three datasets with different sizes, generated from FaceBook, Twitter, and Google+ users’ relationship. The smaller dataset contains 4K users. The medium one contains around 80K users, and the large one contains 100K users. Each user is represented by its unique ID number. The download links of three datasets are listed in the the begining page. The small dataset is used to facilitate initial debugging and testing.\
 \
 The format of the data file of the above example is as follows:\
-$A\quad B$\
-$A\quad D$\
-$B\quad A$\
-$C\quad A$\
-$C\quad B$\
-$C\quad E$\
-$E\quad A$\
-$E\quad B$\
-$E\quad C$
+A$\quad$B\
+A$\quad$D\
+B$\quad$A\
+C$\quad$A\
+C$\quad$B\
+C$\quad$E\
+E$\quad$A\
+E$\quad$B\
+E$\quad$C
 ## Maximal Common Followees Recommendation
 Recommend the person with the maximal number of common followees in the medium scale dataset. If multiple people share the same number, randomly pick one of them.
 ### MR job 1: generate user pairs with common followee
