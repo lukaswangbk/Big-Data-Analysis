@@ -5,7 +5,7 @@ Seven data-intensive and machine learning problems. Feel free to submit a pull r
 ## Enviroment
 * `Ubuntu 14.04 LTS`
 * `Hadoop version: 2.9.2`
-* `Python version: 2.7`
+* `Python version: 2.7 and 3.7.4`
 ###### *Remark: If the formular cannot showed properly on chrome, please add [MathJax Plugin for Github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related)
 ## Project
 Project Name | Dataset | Task 1 | Task 2 | Task 3 | Task 4 
