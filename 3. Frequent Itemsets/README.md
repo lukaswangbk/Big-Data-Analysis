@@ -319,6 +319,7 @@ b | 1 | 1 | 0
 c | 0 | 1 | 1
 d | 1 | 0 | 0
 e | 0 | 1 | 1
+
 **Jaccard similarities:**\
 Sim(X, Y) = 1/5 \
 Sim(X, Z) = 1/5 \
@@ -332,6 +333,7 @@ Perm | X | Y | Z
 3 | 1 | 2 | 2
 4 | 2 | 1 | 1
 5 | 1 | 1 | 2
+
 **Jaccard similarities:**\
 Sim(X, Y) = 1/5\
 Sim(X, Z) = 1/5\
