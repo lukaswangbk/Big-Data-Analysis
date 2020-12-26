@@ -84,11 +84,7 @@ output: Similarity: [-0.13608276, -0.85715939, 1., 0.09860133, 0.17588162, 0.]
 ```
 
 ## Matrix Factorization 
-techniques are effective to discover the latent features
-underlying the interactions between users and items. A matrix factorization example and its
-Python code are provided in the blog of Ref [1]. Please read the blog in [1] to understand the
-python code and then use it to predict the rating of User II on Movie C. Compare the result with
-the ones you obtained in part (a).
+Matrix Factorization techniques are effective to discover the latent features underlying the interactions between users and items. We can use it to predict the rating of User II on Movie C.
 ```python
 def matrix_factorization(R, P, Q, K, steps=5000, alpha=0.0002, beta=0.02):
     Q = Q.T
@@ -134,3 +130,4 @@ Q = np.random.rand(M,K)
 nP, nQ = matrix_factorization(R, P, Q, K)
 nR = np.dot(nP, nQ.T)
 ```
+Here we test on K, which means the number of latent variables, from 1 to 6 and find the loss achieve its minimum with same step size when K = 5.

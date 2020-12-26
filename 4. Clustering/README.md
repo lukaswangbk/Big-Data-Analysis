@@ -4,20 +4,20 @@ The EMNIST’s letters database is a dataset of handwritten letters, comprising 
 examples and 20800 test examples. In this question, we will implement the k-means algorithm using EMNIST’s letters dataset. The data can be downloaded at begining page. The EMNIST letters data set contains 26 various letters(with both uppercase and lowercase). Each of the letters is a 28x28 pixel image, resulting in a 784-dimensional space. The training set contains two files:
 - *emnist-letters-train-images-idx3-ubyte :* training set images (97843216 bytes)
   
-  *Contains the training image instances. Rows are images and columns are pixels with values from 0 to 255.*
+  **Contains the training image instances. Rows are images and columns are pixels with values from 0 to 255.**
 
 - *emnist-letters-train-labels-idx1-ubyte :* training set labels (124808 bytes)
   
-  *Contains the true labels of training images.*
+  **Contains the true labels of training images.**
 
 And the testing set contains the following 2 files:
 - *emnist-letters-test-images-idx3-ubyte :* testing set images (16307216 bytes)
   
-  *Contains the testing image instances.*
+  **Contains the testing image instances.**
 
 - *emnist-letters-test-labels-idx1-ubyte :* testing set labels (20808 bytes)
   
-  *Contains the true labels of testing images.*
+  **Contains the true labels of testing images.**
 
 Note that they are binary files and the dataset structure matches the [MNIST dataset](http://yann.lecun.com/exdb/mnist/). You can get detailed information of the data from [here](
 https://www.nist.gov/itl/products-and-services/emnist-dataset/) and the [paper](https://arxiv.org/pdf/1702.05373v1.pdf).

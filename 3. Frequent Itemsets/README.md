@@ -344,7 +344,7 @@ Consider the use of the Minhash/Locality-Sensitive Hashing (LSH) scheme to find 
 ### Parameter Design for Minhash/ Locality-Sensitive Hashing (LSH)
 Let r be the number of rows within each band and B be the total number of bands within the Minhash signature matrix M. We want to design the system so that:
 - For any pair of items with similarity greater than or equal to T1, the probability that they will be correctly identified as a similar-pair candidate should be at least P1.
-- For any pair of items with similarity below T2, the probability that they will be mistakenly identified as a similar-pair candidate should be no more than P2.\
+- For any pair of items with similarity below T2, the probability that they will be mistakenly identified as a similar-pair candidate should be no more than P2.
 
 For T1=0.85, T2=0.5, P1=0.99 and P2=0.01, derive a single pair of values for (r, B) so that the aforementioned accuracy/error requirements would be satisfied.
 ```python 
