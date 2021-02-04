@@ -14,7 +14,6 @@ sudo apt-get update
 ```
 **Step 3:** Install Java 8
 ```Bash
-sudo apt-get update
 sudo apt-get install default-jre
 sudo apt-get install default-jdk
 ```
@@ -22,12 +21,11 @@ sudo apt-get install default-jdk
 ```Bash
 wget http://apache.cs.utah.edu/hadoop/common/hadoop-2.10.1/hadoop-2.10.1.tar.gz
 ```
-**Step 5:** Download and untar hadoop 2.10.1
+**Step 5:** Untar hadoop 2.10.1
 ```Bash
-wget http://apache.cs.utah.edu/hadoop/common/hadoop-2.10.1/hadoop-2.10.1.tar.gz
 ls -ltr|grep -i hadoop
 tar -xvzf hadoop-2.10.1.tar.gz
-mv hadoop-2.9.2 hadoop2 
+mv hadoop-2.10.1 hadoop2 
 ```
 **Step 6:** Modify `.bashrc`
 ```Bash
