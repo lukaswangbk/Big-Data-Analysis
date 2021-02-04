@@ -94,7 +94,7 @@ export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"
 ```
 **Step 11:** Configure `core-site.xml`
 ```Bash
-vim /home/spark/hadoop2/etc/hadoop/core-site.xml
+vim /home/g295334279/hadoop2/etc/hadoop/core-site.xml
 ```
 ```xml
 <property>
