@@ -76,7 +76,7 @@ export PATH=$PATH:$HADOOP_HOME/bin
 ```
 **Step 10:** Configure `hadoop-env.sh`
 ```Bash
-vim /home/g295334279/hadoop2/etc/hadoop/hadoop-env.sh
+vim /home/hostname/hadoop2/etc/hadoop/hadoop-env.sh
 ```
 ```Bash
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
