@@ -1,6 +1,7 @@
 # Hadoop Cluster Setup
 Hadoop is an open-source software framework used for distributed storage and processing. We are going to setup a Hadoop cluster using Google
 Compute Engine. The official tutorial for Amazon EC2 can be found [here](https://aws.amazon.com/getting-started).
+REMARK: Change g295334279 with your hostname
 
 ## Task 1: Single-node Hadoop Setup
 **Step 1:** Linux VM setup
@@ -76,7 +77,7 @@ export PATH=$PATH:$HADOOP_HOME/bin
 ```
 **Step 10:** Configure `hadoop-env.sh`
 ```Bash
-vim /home/hostname/hadoop2/etc/hadoop/hadoop-env.sh
+vim /home/g295334279/hadoop2/etc/hadoop/hadoop-env.sh
 ```
 ```Bash
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
