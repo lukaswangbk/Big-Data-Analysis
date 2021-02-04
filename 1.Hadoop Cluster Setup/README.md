@@ -117,8 +117,8 @@ vim /home/g295334279/hadoop2/etc/hadoop/core-site.xml
 ```
 **Step 12:** Configure `mapred-site.xml`
 ```Bash
-cp /home/g295334279/hadoop/etc/hadoop/mapred-site.xml.template /home/g295334279/hadoop/etc/hadoop/mapred-site.xml
-vi /home/g295334279/hadoop/etc/hadoop/mapred-site.xml
+cp /home/g295334279/hadoop2/etc/hadoop/mapred-site.xml.template /home/g295334279/hadoop2/etc/hadoop/mapred-site.xml
+vi /home/g295334279/hadoop2/etc/hadoop/mapred-site.xml
 ```
 ```xml
 <property>
