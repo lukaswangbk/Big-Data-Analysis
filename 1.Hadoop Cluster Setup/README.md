@@ -178,16 +178,16 @@ yarn-daemons.sh start nodemanager
 ```
 **Step 18:** Stop hadoop
 ```Bash
-hadoop-daemon.sh start namenode
-hadoop-daemons.sh start datanode
-yarn-daemon.sh start resourcemanager
-yarn-daemons.sh start nodemanager
+hadoop-daemon.sh stop namenode
+hadoop-daemons.sh stop datanode
+yarn-daemon.sh stop resourcemanager
+yarn-daemons.sh stop nodemanager
 ```
 **Step 19:** Standalone operation 
 ```Bash
 bin/hdfs dfs -mkdir -p input
 bin/hdfs dfs -ls input
-bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar grep input output 'dfs[a-z.]+'
+bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar grep input output 'dfs[a-z.]+'
 ```
 **Step 20:** Setup passphraseless ssh
 ```Bash
@@ -211,9 +211,9 @@ jps
     Check on port 50070 with external IP address
 **Step 23:** Check with Terasort
 ```Bash
-./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar teragen 100000 terasort/input
-./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar terasort terasort/input terasort/output
-./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar teravalidate terasort/output terasort/check
+./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar teragen 100000 terasort/input
+./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar terasort terasort/input terasort/output
+./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar teravalidate terasort/output terasort/check
 ```
 **Step 24:** Congrats and play around with it
 
@@ -469,13 +469,13 @@ jps
     Check on port 50070/ 8088 (if available) with external IP address
 **Step 19:** Check with 2GB Terasort
 ```Bash
-hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar teragen 21474837 terasort/2G-input
-hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar terasort terasort/2G-input terasort/2G-output
+hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar teragen 21474837 terasort/2G-input
+hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar terasort terasort/2G-input terasort/2G-output
 ```
 **Step 20:** Check with 2GB Terasort
 ```Bash
-hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar teragen 214748365 terasort/20G-input
-hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.2.jar terasort terasort/2G-input terasort/20G-output
+hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar teragen 214748365 terasort/20G-input
+hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.1.jar terasort terasort/2G-input terasort/20G-output
 ```
 ## Task 3: Python 2 and Java Job Comparasion
 ### Dataset Preparation
@@ -497,7 +497,7 @@ mv shakespeare-basket* shakespeare_input
 ```
 ### Python 2 Mapper & Reducer
 ```Bash
-./bin/hadoop jar ./share/hadoop/tools/lib/hadoop-streaming-2.9.2.jar -file MapReduce_WordCount/mapper.py -mapper mapper.py -file MapReduce_WordCount/reducer.py -reducer reducer.py -input /user/hduser/input/* -output /user/hduser/output
+./bin/hadoop jar ./share/hadoop/tools/lib/hadoop-streaming-2.10.1.jar -file MapReduce_WordCount/mapper.py -mapper mapper.py -file MapReduce_WordCount/reducer.py -reducer reducer.py -input /user/hduser/input/* -output /user/hduser/output
 ```
 ### Java Mapper & Reducer
 ```Bash
